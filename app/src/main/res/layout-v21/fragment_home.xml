@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
+        android:id="@+id/tvCaption"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:text="@string/Inputdata"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:elevation="5dp"
-        android:background="@color/colorAccent" />
+        style="@style/View" />
 
-    <TextView
-        android:id="@+id/text_home2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:hint="@string/hint_name"
+        app:helperText="Will be used for call"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_home"
-        android:text="@string/test"
-        android:elevation="2dp"
-        android:background="@color/colorAccent"/>
+        app:layout_constraintTop_toBottomOf="@id/tvCaption"
+        app:boxCornerRadiusTopStart="10dp"
+        app:hintTextAppearance="@style/EditTextHintStyle"
+        style="@style/TextInputLayoutMargin">
 
-    <TextView
-        android:id="@+id/text_home3"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:hint="@string/hint_email"
+        app:helperText="Will be used to send you a lot of adds"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_home2"
-        android:text="@string/test"
-        android:background="@color/colorAccent"/>
+        app:layout_constraintTop_toBottomOf="@id/tilName"
+        app:boxCornerRadiusTopStart="10dp"
+        app:hintTextAppearance="@style/EditTextHintStyle"
+        style="@style/TextInputLayoutMargin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:theme="@style/EditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilEmail"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/MatButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

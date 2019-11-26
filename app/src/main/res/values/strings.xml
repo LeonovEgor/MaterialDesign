@@ -18,4 +18,10 @@
     <string name="colorPrimaryDark">colorPrimaryDark</string>
     <string name="colorAccent">colorAccent</string>
     <string name="apply">Apply</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="Inputdata">Введите данные</string>
+    <string name="hint_email">Enter your E-Mail</string>
+    <string name="enter">Enter</string>
+    <string name="login">Login</string>
+
 </resources>
