@@ -1,4 +1,4 @@
-package ru.leonov.instagramClient.ui.home;
+package ru.leonov.instagramClient;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,24 +18,12 @@ import ru.leonov.instagramClient.R;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-    private MaterialButton btnEnter;
     private EditText etName;
     private EditText etMail;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-//        final TextView textView = root.findViewById(R.id.text_home);
-//        homeViewModel.getText().observe(this, new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
-        return root;
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override
@@ -47,7 +35,7 @@ public class HomeFragment extends Fragment {
 
     private void initView(View view) {
         final View fView = view;
-        btnEnter = view.findViewById(R.id.btnEnter);
+        MaterialButton btnEnter = view.findViewById(R.id.btnEnter);
         etName = view.findViewById(R.id.tiName);
         etMail = view.findViewById(R.id.tiEmail);
 

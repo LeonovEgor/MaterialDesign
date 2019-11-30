@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -47,7 +48,6 @@
         android:text="@string/apply"/>
 
 
-
     <TextView
         android:id="@+id/colorPrimaryText2"
         android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
         style="@style/View"
         android:background="@color/colorPrimary2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/applyScheme1"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme1"
         android:text="@string/colorPrimary"/>
 
     <TextView
@@ -78,7 +78,7 @@
         style="@style/View"
         android:background="@color/colorAccent2"
         app:layout_constraintStart_toEndOf="@id/colorPrimaryDarkText2"
-        app:layout_constraintTop_toBottomOf="@+id/applyScheme1"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme1"
         android:text="@string/colorAccent"/>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -101,7 +101,7 @@
         style="@style/View"
         android:background="@color/colorPrimary3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/applyScheme2"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme2"
         android:text="@string/colorPrimary"/>
 
     <TextView
@@ -112,7 +112,7 @@
         style="@style/View"
         android:background="@color/colorPrimaryDark3"
         app:layout_constraintStart_toEndOf="@id/colorPrimaryText3"
-        app:layout_constraintTop_toBottomOf="@+id/applyScheme2"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme2"
         android:text="@string/colorPrimaryDark"/>
 
     <TextView
@@ -123,7 +123,7 @@
         style="@style/View"
         android:background="@color/colorAccent3"
         app:layout_constraintStart_toEndOf="@id/colorPrimaryDarkText3"
-        app:layout_constraintTop_toBottomOf="@+id/applyScheme2"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme2"
         android:text="@string/colorAccent"/>
 
     <androidx.appcompat.widget.AppCompatButton

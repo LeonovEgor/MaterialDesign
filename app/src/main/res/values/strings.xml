@@ -19,7 +19,7 @@
     <string name="colorAccent">colorAccent</string>
     <string name="apply">Apply</string>
     <string name="hint_name">Enter your name</string>
-    <string name="Inputdata">Введите данные</string>
+    <string name="Input_data">Введите данные</string>
     <string name="hint_email">Enter your E-Mail</string>
     <string name="enter">Enter</string>
     <string name="login">Login</string>
@@ -32,5 +32,8 @@ Bottom Sheet – компонент, который располагается �
 
     </string>
     <string name="help">Справка</string>
+    <string name="communicate">Communicate</string>
+    <string name="signUp">Sign up</string>
+    <string name="exit">Exit</string>
 
 </resources>

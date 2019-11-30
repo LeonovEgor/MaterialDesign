@@ -1,4 +1,4 @@
-package ru.leonov.instagramClient.ui.slideshow;
+package ru.leonov.instagramClient;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,25 +21,12 @@ import ru.leonov.instagramClient.R;
 
 public class SlideshowFragment extends Fragment {
 
-    FloatingActionButton fab;
-    BottomSheetBehavior bottomSheetBehavior;
-
-
-    private SlideshowViewModel slideshowViewModel;
+    private FloatingActionButton fab;
+    private BottomSheetBehavior bottomSheetBehavior;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+        return inflater.inflate(R.layout.fragment_slideshow, container, false);
     }
 
     @Override
@@ -61,24 +48,14 @@ public class SlideshowFragment extends Fragment {
         bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                switch (newState) {
-                    case BottomSheetBehavior.STATE_HIDDEN:
-                        fab.show();
-                        break;
-                    case BottomSheetBehavior.STATE_COLLAPSED:
-                    case BottomSheetBehavior.STATE_DRAGGING:
-                    case BottomSheetBehavior.STATE_EXPANDED:
-                    case BottomSheetBehavior.STATE_HALF_EXPANDED:
-                        fab.hide();
-                        break;
-                }
+                if (newState == BottomSheetBehavior.STATE_HIDDEN) fab.show();
+                else fab.hide();
             }
+
             @Override
             public void onSlide(@NonNull View bottomSheet, float slideOffset) {
                 fab.hide();
             }
         });
-
     }
-
 }

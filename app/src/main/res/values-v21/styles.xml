@@ -1,12 +1,12 @@
 <resources>
 
-    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light">
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="Margin" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Margin" parent="Theme.MyApp">
         <item name="android:layout_margin">8dp</item>
     </style>
 
