@@ -7,37 +7,26 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="ru.leonov.instagramClient.ui.home.HomeFragment"
+        android:name="ru.leonov.instagramClient.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="ru.leonov.instagramClient.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_buttons"
+        android:name="ru.leonov.instagramClient.ButtonsFragment"
+        android:label="@string/menu_buttons"
+        tools:layout="@layout/fragment_buttons" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="ru.leonov.instagramClient.ui.slideshow.SlideshowFragment"
+        android:name="ru.leonov.instagramClient.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="ru.leonov.instagramClient.ui.tools.ToolsFragment"
+        android:name="ru.leonov.instagramClient.ToolsFragment"
         android:label="@string/menu_tools"
         tools:layout="@layout/fragment_tools" />
 
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="ru.leonov.instagramClient.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="ru.leonov.instagramClient.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>

@@ -13,4 +13,33 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="test">test</string>
+    <string name="colorPrimary">colorPrimary</string>
+    <string name="colorPrimaryDark">colorPrimaryDark</string>
+    <string name="colorAccent">colorAccent</string>
+    <string name="apply">Apply</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="Input_data">Введите данные</string>
+    <string name="hint_email">Enter your E-Mail</string>
+    <string name="enter">Enter</string>
+    <string name="login">Login</string>
+    <string name="text">
+Bottom Sheet – компонент, который располагается внизу экрана и показывает дополнительный контент Persistent bottom sheet. Отображается как контент в приложении, который дополняет содержание основного View. Он остается видимым, даже если его активно не использовать, так как располагается в той же глубине (elevation), что и основная часть приложения.
+Использование:
+Для ввода нового контента на дополнительной поверхности;
+Для отображения дополнительного контента, сравнимого по значению с основным содержанием.
+В данном случае persistent bottom sheet позволяет разместить детали, остающиеся на экране, когда пользователь перемещает карту, двигая ее в любом направлении.
+
+    </string>
+    <string name="help">Справка</string>
+    <string name="communicate">Communicate</string>
+    <string name="signUp">Sign up</string>
+    <string name="exit">Exit</string>
+    <string name="DefaultMaterialButton">Filled Elevated Button (Default)</string>
+    <string name="FilledUnelevatedButton">Filled Unelevated Button</string>
+    <string name="btnTextButton">Text Button</string>
+    <string name="UnelevatedButton">Unelevated Button</string>
+    <string name="menu_buttons">Buttons</string>
+    <string name="action_task2">Task 2</string>
+
 </resources>
