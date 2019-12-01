@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_buttons"
+        android:name="ru.leonov.instagramClient.ButtonsFragment"
+        android:label="@string/menu_buttons"
+        tools:layout="@layout/fragment_buttons" />
+
+    <fragment
         android:id="@+id/nav_slideshow"
         android:name="ru.leonov.instagramClient.SlideshowFragment"
         android:label="@string/menu_slideshow"

@@ -35,5 +35,11 @@ Bottom Sheet – компонент, который располагается �
     <string name="communicate">Communicate</string>
     <string name="signUp">Sign up</string>
     <string name="exit">Exit</string>
+    <string name="DefaultMaterialButton">Filled Elevated Button (Default)</string>
+    <string name="FilledUnelevatedButton">Filled Unelevated Button</string>
+    <string name="btnTextButton">Text Button</string>
+    <string name="UnelevatedButton">Unelevated Button</string>
+    <string name="menu_buttons">Buttons</string>
+    <string name="action_task2">Task 2</string>
 
 </resources>

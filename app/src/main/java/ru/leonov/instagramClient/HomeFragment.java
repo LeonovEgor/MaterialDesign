@@ -9,17 +9,18 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import ru.leonov.instagramClient.R;
+import java.util.Objects;
 
 public class HomeFragment extends Fragment {
 
     private EditText etName;
     private EditText etMail;
+    private MaterialButton btnEnter;
+    private MaterialButton btnExit;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -31,14 +32,19 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         initView(view);
+        initEnterButtonClick(view);
+        initCloseButtonClick();
     }
 
     private void initView(View view) {
-        final View fView = view;
-        MaterialButton btnEnter = view.findViewById(R.id.btnEnter);
+        btnEnter = view.findViewById(R.id.btnEnter);
         etName = view.findViewById(R.id.tiName);
         etMail = view.findViewById(R.id.tiEmail);
+        btnExit = view.findViewById(R.id.btnExit);
+    }
 
+    private void initEnterButtonClick(View view) {
+        final View fView = view;
         btnEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +60,15 @@ public class HomeFragment extends Fragment {
         });
     }
 
+    private void initCloseButtonClick() {
+        btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Objects.requireNonNull(getActivity()).finish();
+            }
+        });
+    }
+
     private View.OnClickListener snackBarOnClickListener = new View.OnClickListener() {
         @Override public void onClick(View view) {
             if (etName.getText().toString().equals("")) {
@@ -64,5 +79,4 @@ public class HomeFragment extends Fragment {
             }
         }
     };
-
 }
