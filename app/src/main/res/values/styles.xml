@@ -27,4 +27,7 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="ProgressBar" parent="View">
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+    </style>
 </resources>

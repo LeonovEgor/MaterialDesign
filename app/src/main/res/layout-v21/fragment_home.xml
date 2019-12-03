@@ -82,5 +82,4 @@
         app:layout_constraintTop_toBottomOf="@id/btnEnter"
         style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

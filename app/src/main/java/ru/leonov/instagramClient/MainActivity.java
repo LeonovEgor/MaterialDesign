@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ProgressBar;
 
 import java.util.Objects;
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "INSTAGRAM_CLIENT";
     private AppBarConfiguration mAppBarConfiguration;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        initProgressBar();
+    }
+
+    private void initProgressBar() {
+        progressBar = findViewById(R.id.progressBar);
+        progressBar.setMax(100);
+        progressBar.setProgress(55);
     }
 
     @Override
@@ -81,9 +91,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_task2) {
-            Log.d(TAG, "Нажата кнопка меню toolbar");
+        switch (item.getItemId()) {
+            case R.id.action_showProgressBar:
+                progressBar.setVisibility(ProgressBar.VISIBLE);
+                break;
+
+            case R.id.action_hideProgressBar:
+                progressBar.setVisibility(ProgressBar.INVISIBLE);
+                break;
+
+            case R.id.action_task2:
+                Log.d(TAG, "Нажата кнопка меню toolbar");
+                break;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }

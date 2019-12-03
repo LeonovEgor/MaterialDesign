@@ -2,9 +2,9 @@
     <string name="app_name">My Application</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Instagram Simple Client</string>
+    <string name="nav_header_subtitle">Geekbrains university</string>
+    <string name="nav_header_desc">Course of Material design</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
@@ -41,5 +41,8 @@ Bottom Sheet – компонент, который располагается �
     <string name="UnelevatedButton">Unelevated Button</string>
     <string name="menu_buttons">Buttons</string>
     <string name="action_task2">Task 2</string>
+    <string name="custom_text">Customization!</string>
+    <string name="action_showProgress">Show</string>
+    <string name="action_hideProgress">Hide</string>
 
 </resources>
