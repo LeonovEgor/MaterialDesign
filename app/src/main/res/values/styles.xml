@@ -16,5 +16,18 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="Margin" parent="AppTheme">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
 
+    <style name="View" parent="Margin">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ProgressBar" parent="View">
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+    </style>
 </resources>

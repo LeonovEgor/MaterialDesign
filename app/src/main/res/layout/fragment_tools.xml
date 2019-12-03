@@ -1,19 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_tools"
-        android:layout_width="match_parent"
+        android:id="@+id/colorPrimaryText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/View"
+        android:background="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/colorPrimaryDarkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@id/colorPrimaryText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/colorAccentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@id/colorPrimaryDarkText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyScheme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorPrimaryText"
+        style="@style/View"
+        android:text="@string/apply"/>
+
+
+    <TextView
+        android:id="@+id/colorPrimaryText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorPrimary2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme1"
+        android:text="@string/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/colorPrimaryDarkText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorPrimaryDark2"
+        app:layout_constraintStart_toEndOf="@id/colorPrimaryText2"
+        app:layout_constraintTop_toBottomOf="@+id/applyScheme1"
+        android:text="@string/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/colorAccentText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorAccent2"
+        app:layout_constraintStart_toEndOf="@id/colorPrimaryDarkText2"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme1"
+        android:text="@string/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyScheme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorPrimaryText2"
+        style="@style/View"
+        android:text="@string/apply"/>
+
+
+
+
+    <TextView
+        android:id="@+id/colorPrimaryText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorPrimary3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme2"
+        android:text="@string/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/colorPrimaryDarkText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorPrimaryDark3"
+        app:layout_constraintStart_toEndOf="@id/colorPrimaryText3"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme2"
+        android:text="@string/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/colorAccentText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/View"
+        android:background="@color/colorAccent3"
+        app:layout_constraintStart_toEndOf="@id/colorPrimaryDarkText3"
+        app:layout_constraintTop_toBottomOf="@id/applyScheme2"
+        android:text="@string/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyScheme3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorPrimaryText3"
+        style="@style/View"
+        android:text="@string/apply"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
